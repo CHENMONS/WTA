@@ -1,79 +1,115 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
+:root {
+  --primary:#0f2d1e;
+  --secondary:#c9a23f;
+  --light:#f6f8f7;
+  --dark:#1b1b1b;
 }
+
+body {
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  color:#222;
+}
+
+a { text-decoration:none; }
 
 .navbar {
-  background: #0f2d1e;
-  padding: 15px;
+  background:var(--primary);
+  padding:15px 0;
 }
 
-.logo {
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
+.nav-flex {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 nav a {
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
+  color:white;
+  margin-left:20px;
+  font-weight:500;
 }
 
-.hero {
-  height: 70vh;
-  background: #333;
-  position: relative;
-}
-
-.hero-overlay {
-  background: rgba(0,0,0,0.6);
-  height: 100%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section {
-  padding: 50px 0;
+.btn-nav {
+  background:var(--secondary);
+  color:#000;
+  padding:8px 16px;
+  border-radius:4px;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
+  width:90%;
+  margin:auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+.hero-premium {
+  height:95vh;
+  background:
+    linear-gradient(rgba(15,45,30,.8),rgba(15,45,30,.8)),
+    url('../img/industrial.jpg') center/cover;
+  display:flex;
+  align-items:center;
 }
 
-.card {
-  background: #f4f4f4;
-  padding: 30px;
-  border-left: 5px solid #0f2d1e;
+.hero-content {
+  max-width:650px;
+  padding:50px;
+  color:white;
 }
 
-.btn {
-  background: #0f2d1e;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border: none;
+.hero-content h1 {
+  font-size:42px;
+}
+
+.btn-gold {
+  background:var(--secondary);
+  color:#000;
+  padding:14px 28px;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:20px;
+}
+
+.section {
+  padding:70px 0;
+}
+
+.light {
+  background:var(--light);
+}
+
+h2 {
+  color:var(--primary);
+}
+
+.grid-3 {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.service-card {
+  background:white;
+  padding:30px;
+  border-top:5px solid var(--secondary);
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.legal-table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+.legal-table td {
+  padding:12px;
+  border:1px solid #ddd;
 }
 
 footer {
-  background: #0f2d1e;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-.table td {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:20px;
 }
