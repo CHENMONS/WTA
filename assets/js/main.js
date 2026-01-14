@@ -1,1 +1,1 @@
-console.log('WTA Loaded');
+console.log("WTA Website Loaded");
