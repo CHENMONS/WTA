@@ -1,160 +1,188 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Services | PT Widya Techno Abadi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Spesialis | PT Widya Techno Abadi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .service-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.15);
+        }
+
+        .icon-box {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-<!-- HEADER -->
-<header class="header">
-  <nav class="nav">
-    <a class="logo">PT WTA</a>
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black tracking-tighter text-slate-900 border-l-4 border-orange-600 pl-3 uppercase">PT WTA</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
+                <a href="index.html" class="hover:text-orange-600 transition">Beranda</a>
+                <a href="about.html" class="hover:text-orange-600 transition">Tentang</a>
+                <a href="services.html" class="text-orange-600">Layanan</a>
+                <a href="projects.html" class="hover:text-orange-600 transition">Proyek</a>
+                <a href="contact.html" class="hover:text-orange-600 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Our Services</h1>
-  <p>
-    Professional EPC, Construction & Boiler Engineering Services
-  </p>
-</section>
+    <section class="service-gradient pt-44 pb-32 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-full opacity-10">
+            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 100L1000 1000M-500 0L500 1000" stroke="white" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <span class="inline-block px-4 py-1.5 bg-orange-600/20 text-orange-500 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-6">Expertise & Solutions</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 italic tracking-tighter text-white">Layanan <span class="text-orange-500 italic">Engineering</span> Kami</h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menyediakan solusi konstruksi industri terintegrasi, spesialis sistem boiler, dan layanan EPC dengan standar kualitas kelas dunia.
+            </p>
+        </div>
+    </section>
 
-<!-- INTRO -->
-<section class="section container">
-  <h2 class="section-title">What We Do</h2>
-  <p class="section-subtitle">
-    Layanan Konstruksi & Engineering untuk Sektor Industri
-  </p>
+    <section class="py-24 -mt-16 relative z-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-fire-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">Boiler Installation & Retubing</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Instalasi boiler industri, perbaikan sistem pemanas, penggantian pipa (retubing), serta pemeliharaan berkala untuk pabrik kelapa sawit.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Industrial Energy</span>
+                    </div>
+                </div>
 
-  <p style="max-width:900px;margin:auto;text-align:center">
-    PT Widya Techno Abadi menyediakan layanan konstruksi industri,
-    boiler installation, serta EPC (Engineering, Procurement, Construction)
-    dengan standar keselamatan dan kualitas tinggi, khususnya
-    untuk industri kelapa sawit dan fasilitas manufaktur.
-  </p>
-</section>
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-project-diagram text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">EPC Services</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Layanan terintegrasi Engineering, Procurement, dan Construction dari tahap perencanaan desain hingga commissioning operasional.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Integrated Solutions</span>
+                    </div>
+                </div>
 
-<!-- SERVICES GRID -->
-<section class="section light">
-  <div class="container grid-3">
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-industry text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">Industrial Construction</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Pembangunan gedung industri, workshop, gudang, dan fasilitas produksi dengan spesifikasi struktur baja dan beton berstandar tinggi.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Steel & Concrete</span>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h3>Boiler Installation & Retubing</h3>
-      <p>
-        Instalasi boiler industri, perbaikan sistem pemanas,
-        penggantian pipa (retubing), serta maintenance boiler
-        untuk pabrik kelapa sawit dan industri energi.
-      </p>
-    </div>
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">Mechanical & Insulation</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Pemasangan sistem perpipaan (piping), instalasi mekanikal, serta insulasi termal panas/dingin untuk efisiensi energi optimal.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Thermal Systems</span>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h3>EPC Services</h3>
-      <p>
-        Layanan EPC (Engineering, Procurement, Construction)
-        terintegrasi untuk pembangunan fasilitas industri
-        dari tahap perencanaan hingga commissioning.
-      </p>
-    </div>
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-gas-pump text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">Oil & Gas Installation</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Instalasi sistem minyak, gas, dan geothermal sesuai regulasi keselamatan industri nasional dan kepatuhan lingkungan.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Energy Infrastructure</span>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h3>Industrial Construction</h3>
-      <p>
-        Pekerjaan konstruksi gedung industri, workshop,
-        warehouse, serta fasilitas produksi
-        dengan struktur beton dan baja.
-      </p>
-    </div>
+                <div class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col h-full">
+                    <div class="w-16 h-16 icon-box rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-200">
+                        <i class="fas fa-shopping-cart text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-4 italic uppercase">Operational Procurement</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Penyediaan suku cadang dan peralatan operasional untuk mendukung keberlanjutan performa fasilitas pabrik klien.</p>
+                    <div class="pt-6 border-t border-slate-50 flex items-center text-orange-600 font-black text-xs uppercase tracking-widest">
+                        <span>Supply Chain Support</span>
+                    </div>
+                </div>
 
-    <div class="card">
-      <h3>Mechanical & Insulation Works</h3>
-      <p>
-        Instalasi mekanikal, piping system,
-        serta pekerjaan insulasi panas dan dingin
-        untuk efisiensi energi fasilitas industri.
-      </p>
-    </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Oil & Gas Installation</h3>
-      <p>
-        Instalasi sistem thermal, minyak, gas,
-        dan geothermal sesuai standar keselamatan
-        dan regulasi industri nasional.
-      </p>
-    </div>
+    <section class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold italic uppercase tracking-tighter mb-4 text-white">Mengapa Memilih Layanan <span class="text-orange-500 underline underline-offset-8">WTA?</span></h2>
+                <div class="w-20 h-1 bg-orange-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-4xl font-black text-orange-500 mb-4">01.</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic">Industrial Expertise</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fokus mendalam pada sektor energi dan kelapa sawit dengan tim teknis bersertifikasi resmi.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-orange-500 mb-4">02.</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic">Safety & Quality</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Zero Accident Policy. Kami mengedepankan standar K3 dan kualitas material terbaik di setiap proyek.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-orange-500 mb-4">03.</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase italic">Reliable Partner</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Komitmen pada ketepatan waktu dan efisiensi biaya untuk kemitraan industri jangka panjang.</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-[-50px] left-[-50px] text-white opacity-[0.03] text-[250px] font-black rotate-12 select-none">ENGINEERING</div>
+    </section>
 
-    <div class="card">
-      <h3>Operational Procurement</h3>
-      <p>
-        Penyediaan jasa procurement operasional
-        untuk mendukung kelangsungan dan
-        peningkatan performa pabrik klien.
-      </p>
-    </div>
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-orange-600 p-12 md:p-16 rounded-[3rem] text-center text-white shadow-2xl shadow-orange-100 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 italic uppercase tracking-tighter">Butuh Konsultasi Teknis?</h2>
+                    <p class="text-orange-100 mb-10 text-lg max-w-2xl mx-auto italic">Tim profesional kami siap membantu merancang solusi boiler dan konstruksi yang paling efisien untuk bisnis Anda.</p>
+                    <a href="contact.html" class="inline-block bg-slate-900 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white hover:text-orange-600 transition-all duration-300 shadow-xl">
+                        Request a Quote <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <i class="fas fa-hard-hat absolute top-[-30px] right-[-30px] text-[200px] text-white/10 rotate-12"></i>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</section>
-
-<!-- WHY SERVICES -->
-<section class="section container">
-  <h2 class="section-title">Why Our Services</h2>
-
-  <div class="grid-3">
-    <div class="card">
-      <h3>Industrial Expertise</h3>
-      <p>
-        Fokus pada sektor industri dan energi
-        dengan tim berpengalaman.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Safety & Quality</h3>
-      <p>
-        Mengutamakan keselamatan kerja
-        dan standar kualitas industri.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Reliable Partner</h3>
-      <p>
-        Mitra terpercaya untuk proyek
-        jangka pendek maupun jangka panjang.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section container">
-  <div class="card" style="text-align:center">
-    <h2>Need Our Services?</h2>
-    <p>
-      Konsultasikan kebutuhan proyek Anda
-      bersama tim profesional kami.
-    </p>
-    <a href="contact.html" class="btn btn-primary">Request a Quote</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-bottom">
-    © 2025 PT Widya Techno Abadi. All Rights Reserved.
-  </div>
-</footer>
+    <footer class="bg-white py-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-2xl font-black text-slate-900 italic tracking-tighter mb-4 uppercase">PT Widya Techno Abadi</div>
+            <p class="text-slate-400 text-[10px] font-black tracking-[0.4em] uppercase">© 2026 PT Widya Techno Abadi. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
